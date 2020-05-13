@@ -35,7 +35,7 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "build": "build-storybook -o dist",
+    "build": "build-storybook -o docs",
     "dev": "start-storybook",
     "prepare": "yarn run build",
     "test": "jest"
