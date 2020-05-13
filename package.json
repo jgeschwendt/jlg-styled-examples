@@ -1,16 +1,7 @@
 {
   "name": "@jlg/styled-examples",
   "version": "0.1.0",
-  "description": "Reusable structural Styled Components and tooling",
-  "keywords": [],
-  "browser": {
-    "./dist/styled-components.cjs.js": "./dist/styled-components.browser.cjs.js",
-    "./dist/styled-components.esm.js": "./dist/styled-components.browser.esm.js"
-  },
-  "main": "dist/styled-components.cjs.js",
-  "module": "dist/styled-components.esm.js",
-  "sideEffects": false,
-  "types": "src/index.ts",
+  "description": "Examples using @jlg/styled-components & @jlg/styled-media",
   "dependencies": {
     "@jlg/styled-components": "0.1.0",
     "@jlg/styled-media": "0.1.0",
@@ -30,14 +21,9 @@
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.7",
     "@types/styled-components": "5.1.0",
-    "@typescript-eslint/eslint-plugin": "2.31.0",
-    "@typescript-eslint/parser": "2.31.0",
     "babel-loader": "8.1.0",
     "babel-plugin-styled-components": "1.10.7",
-    "eslint": "6.8.0",
-    "eslint-loader": "4.0.2",
-    "eslint-plugin-react": "7.19.0",
-    "eslint-plugin-react-hooks": "4.0.0",
+    "babel-preset-react-app": "9.1.2",
     "styled-components": "5.1.0",
     "typescript": "3.8.3",
     "webpack": "4.43.0"
@@ -49,9 +35,8 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
-    "build": "build-storybook -o docs",
+    "build": "build-storybook -o dist",
     "dev": "start-storybook",
-    "lint": "eslint --ext .ts --ext .tsx .",
     "prepare": "yarn run build",
     "test": "jest"
   }
